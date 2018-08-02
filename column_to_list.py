@@ -8,7 +8,6 @@ list_column = []
 n = 42
 # iterate in list and separate it by ethereum address
 def get_user_split_column():
-    global usc
     for i in range(0, len(user_column), n):
         usc: List[ Any] = (user_column[i:i + n], n)
     return usc

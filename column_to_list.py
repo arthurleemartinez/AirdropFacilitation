@@ -1,19 +1,19 @@
 # initialize user interface
-print("This program will help you perform your airdrop.")
-user_column = num(input("Please enter/paste your entire column of ethereum addresses.")
-list_column = []
-def get_user_split_column(user_init_column):
-	# every ethereum address is equal to 42 char
-	n = 42
-	# iterate in list and seperate it by ethereum address
-	from every addressfor i in range(0, len(line), n):
-	    usc = [user_init_column[i:i+n]]
-	return usc
-user_split_column = get_user_split_column(user_init_column
-def remove_0x(user_split_column):
-	address_removed_prefix = user_split_column[2:-2]		  
-    return address_removed_prefix										  
-rem_0x = remove_0x(user_split_column)
+from typing import List, Any
 
-del column_csv(rem_0x):
-	for address in rem_0x:
+print("This program will help you perform your airdrop.")
+user_column: str = input("Please enter/paste your entire column of ethereum addresses.")
+list_column = []
+# every ethereum address is equal to 42 char
+n = 42
+# iterate in list and separate it by ethereum address
+def get_user_split_column():
+    global usc
+    for i in range(0, len(user_column), n):
+        usc: List[ Any] = (user_column[i:i + n], n)
+    return usc
+user_split_column = get_user_split_column()
+def remove_0x():
+    address_removed_prefix = user_split_column[2:-2]		  
+    return address_removed_prefix										  
+rem_0x = remove_0x()

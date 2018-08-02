@@ -10,9 +10,10 @@ n = 42
 def get_user_split_column():
     for i in range(0, len(user_column), n):
         usc: List[ Any] = (user_column[i:i + n], n)
-    return usc
+        a: List[Any] = usc
+    return a
 user_split_column = get_user_split_column()
 def remove_0x():
     address_removed_prefix = user_split_column[2:-2]		  
-    return address_removed_prefix										  
+    return address_removed_prefix
 rem_0x = remove_0x()

@@ -3,7 +3,7 @@ from typing import List, Any
 
 print("This program will help you perform your airdrop.")
 user_column: str = input("Please enter/paste your entire column of ethereum addresses.")
-user_column = user_column[:75]
+user_column = user_column[:4200]
 list_column = []
 # every ethereum address is equal to 42 char
 n = 42

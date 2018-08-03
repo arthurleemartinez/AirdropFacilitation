@@ -5,7 +5,18 @@ list_column = []
 # every ethereum address is equal to 42 char
 n = 42
 allowance = '1000'
-contract_address = '0x1eAe15d9f4FA16f5278D02d2f8bDA8b0dcd31f71'
+exceed = '0x1eAe15d9f4FA16f5278D02d2f8bDA8b0dcd31f71'
+
+
+def get_allowance(str):
+    return str
+
+
+def get_contract_address(str):
+    return str
+
+
+contract_address = get_contract_address()
 
 # iterate in list and separate it by ethereum address
 
@@ -31,7 +42,7 @@ def get_list_column():
 user_split_column = get_user_split_column()
 
 
-print(allowance)
-print(contract_address)
+print(get_contract_address(exceed))
+print(get_allowance('1000'))
 print(get_user_split_column())
 print(get_list_column())

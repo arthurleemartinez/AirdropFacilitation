@@ -13,7 +13,7 @@ def get_allowance(str):
 
 
 def get_contract_address(str):
-    return str
+    return 'Contract Address (Token): %s' % exceed
 
 
 contract_address = get_contract_address()

@@ -38,7 +38,8 @@ def get_user_split_column():
 def get_list_column():
     list_column = list_column.append(get_user_split_column())
 
-
+>>> s = '1234567890'
+>>> map(''.join, zip(*[iter(s)]*42))=
 user_split_column = get_user_split_column()
 
 

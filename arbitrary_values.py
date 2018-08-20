@@ -3,7 +3,7 @@ max_drop_per_person = int(input('What is the maximum amount of Exceed are we are
 x = []
 y = []
 for i in range(100):
-    y = random.random() * 800
+    y = random.random() * max_drop_per_person
     zz = round(y, 6)
     x.append(zz)
     whitespace_containing_list = x

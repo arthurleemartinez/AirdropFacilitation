@@ -1,4 +1,15 @@
 import random
+import webbrowser
+
+url = 'https://ethgasstation.info/'
+
+# MacOS
+#chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
+
+# Windows
+chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
+
+webbrowser.get(chrome_path).open(url)
 exceed_smart_contract:str = '0x1eae15d9f4fa16f5278d02d2f8bda8b0dcd31f71'
 #max_drop_per_person = int(input('What is the maximum amount of Exceed are we are dropping per person here?'))
 x = []
@@ -12,3 +23,4 @@ for i in range(100):
 print('Copy and Paste this into the "ERC20 Address" box: {}'.format(exceed_smart_contract))
 print("Printing out comma separated list...")
 print(final_list_values)
+webbrowser.get(chrome_path).open(url)
